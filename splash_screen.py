@@ -14,7 +14,7 @@ class SplashScreen:
         master.resizable(False, False)
         master.overrideredirect(True)
 
-        configure_bg_image(self.master, "src/img/splash.png", 500, 700)
+        configure_bg_image(self.master, "img/splash.png", 500, 700)
 
         self.create_widgets()
 

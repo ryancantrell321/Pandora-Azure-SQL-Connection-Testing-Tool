@@ -8,10 +8,6 @@ Program Name: PANDORA DATABASE CONNECTION TESTER (AZURE SQL)
 """
 from src.gui_initialization import *
 from splash_screen import SplashScreen
-from src.mechanisms.dependencies_checker import dependencies
-
-
-dependencies("requirements.txt")
 
 
 # Configuration:
@@ -30,7 +26,7 @@ class AzureSQLConnectionTester:
         master.resizable(False, False)
 
         configure_icon(self.master, "src/img/ico/icons8-database-94.ico")
-        configure_bg_image(self.master, "src/img/bg_abstract.jpg", 500, 500)
+        configure_bg_image(self.master, "img/bg_abstract.jpg", 500, 500)
         create_widgets(self)
 
         self.show_password_var = tk.BooleanVar()

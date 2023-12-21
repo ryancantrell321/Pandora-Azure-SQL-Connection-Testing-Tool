@@ -1,5 +1,6 @@
 import tkinter as tk
 import customtkinter as ctk
+import os
 from PIL import ImageTk, Image
 from src.mechanisms.azure_tester import test_azure_sql_connection
 from src.mechanisms.button_mechanisms import *
@@ -62,6 +63,10 @@ def configure_icon(master, icon_path):
 
 
 def configure_bg_image(master, bg_image_path, bw, bh):
+
+    script_dir = os.path.dirname(__file__)
+    bg_image_path = os.path.join(script_dir, bg_image_path)
+
     bg = Image.open(bg_image_path)
     bg = bg.resize((bw, bh))
     bg_image = ImageTk.PhotoImage(bg)

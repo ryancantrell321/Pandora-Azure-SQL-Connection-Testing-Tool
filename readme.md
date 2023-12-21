@@ -66,10 +66,14 @@ Before running the program, activate the virtual environment by using the follow
 `venv\Scripts\activate`
 
 ### Launching the program or Installing Dependencies:
-The program is pre-configured to check whether dependencies are installed within the virtual environment. If not, they will be installed before the program begins to work.
+
 
 #### Navigate to the program directory using a terminal or Powershell:
 `cd /path/"Pandora Azure SQL Connection Testing Tool"`
+
+### Installing Dependencies:
+`pip install -r requirements.txt`
+
 
 #### Write or copypaste the below code in the terminal based on your OS:
 #### On Windows Powershell:
